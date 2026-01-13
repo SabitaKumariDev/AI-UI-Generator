@@ -2,11 +2,6 @@
 
 A full-stack application that transforms natural language prompts into production-ready React + Tailwind CSS components using OpenAI's GPT-4o.
 
-![AI UI Generator](https://img.shields.io/badge/AI-UI%20Generator-blue)
-![React](https://img.shields.io/badge/React-18-61dafb)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991)
-
 ## Features
 
 - 🎨 **Natural Language to UI** - Describe your component in plain English
@@ -216,36 +211,6 @@ The app implements a circuit breaker pattern to prevent cascading failures:
 - **Per-user limit**: 10 requests per minute
 - **Prevents API abuse** and controls costs
 
-## Troubleshooting
-
-### Port Already in Use
-```bash
-# Windows - Find and kill process on port 8001
-netstat -ano | findstr :8001
-taskkill /PID <PID> /F
-
-# Or change port in server.py
-uvicorn.run(app, host="0.0.0.0", port=8002)
 ```
 
-### MongoDB Connection Failed
-- Ensure MongoDB is running
-- Check `MONGO_URL` in `.env`
-- For MongoDB Atlas, whitelist your IP
 
-### OpenAI API Errors
-- Verify `OPENAI_API_KEY` is correct
-- Check your OpenAI account has credits
-- Ensure API key has proper permissions
-
-## License
-
-MIT License
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
