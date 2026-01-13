@@ -1,0 +1,166 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "persona": "Creative Designer who consistently produces top 1% designs. Mixes disparate disciplines. Fusion over Imitation. Emotion First.",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is king",
+      "Zoom in",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "project": {
+    "name": "v0-clone",
+    "description": "A production-grade AI UI generator. The Latent Space Terminal.",
+    "target_audience": "Developers, Designers, Product Builders",
+    "emotional_tone": "Swiss Brutalist, Technical, Electric, Precision",
+    "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST (Authority, Clarity, Truth) + ARCHETYPE 2: ELECTRIC & NEON (Future)"
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Inter Tight, sans-serif",
+        "weights": ["500", "600", "700"],
+        "usage": "Main headings, section titles. Tight tracking (-0.02em)."
+      },
+      "body": {
+        "family": "Inter, sans-serif",
+        "weights": ["400", "500"],
+        "usage": "General UI text, descriptions."
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "weights": ["400", "500"],
+        "usage": "Code blocks, technical labels, badges, input fields."
+      }
+    },
+    "rules": [
+      "Headings > 32px MUST use tracking-tight.",
+      "Overlines/Labels MUST be Uppercase + Tiny + Wide Spacing (tracking-widest).",
+      "Line height: Tight (leading-none) for headers, Relaxed (leading-relaxed) for body."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "default": "#6366f1",
+        "hover": "#4f46e5",
+        "foreground": "#ffffff",
+        "description": "Electric Indigo. Use for primary actions (Generate, Save) and active states."
+      },
+      "background": {
+        "default": "#09090b",
+        "paper": "#18181b",
+        "subtle": "#27272a",
+        "description": "Deep Void Black. The canvas of the terminal."
+      },
+      "foreground": {
+        "default": "#fafafa",
+        "muted": "#a1a1aa",
+        "description": "Stark White for text. Zinc-400 for muted text."
+      },
+      "border": {
+        "default": "#27272a",
+        "active": "#3f3f46",
+        "description": "Visible, structural borders. 1px solid."
+      },
+      "accent": {
+        "default": "#f59e0b",
+        "description": "Electric Amber. Use sparingly for 'Warning' or 'Attention' states."
+      }
+    },
+    "gradients": {
+      "glow": "linear-gradient(to right, #6366f1, #a855f7)",
+      "subtle_mesh": "radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15), transparent 70%)"
+    },
+    "rules": [
+      "NO generic full-screen gradients.",
+      "Use 'Tinted Grey' rule: Neutrals should have a tiny hint of blue/indigo.",
+      "Contrast Ratio: Minimum 4.5:1 for normal text."
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "marketing": "MODE A: THE TETRIS GRID (Asymmetry, Tension)",
+      "dashboard": "MODE B: THE CONTROL ROOM GRID (Density, Data)",
+      "history": "Bento Grid (Mixed spans)"
+    },
+    "spacing": {
+      "scale": ["p-1", "p-2", "p-4", "p-6", "p-8", "p-12", "p-16", "p-24", "p-32"],
+      "philosophy": "Generous spacing. 2-3x more than typical designs."
+    },
+    "containers": {
+      "max_width": "max-w-7xl",
+      "padding": "px-4 md:px-8"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 rounded-md font-medium transition-all shadow-[0_0_15px_rgba(99,102,241,0.3)] hover:shadow-[0_0_25px_rgba(99,102,241,0.5)]",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 rounded-md font-medium border border-border/50",
+      "ghost": "hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 rounded-md font-medium",
+      "icon": "h-10 w-10 p-0 rounded-md flex items-center justify-center"
+    },
+    "inputs": {
+      "prompt_area": "bg-background/50 backdrop-blur-xl border border-white/10 focus:border-primary/50 rounded-xl p-4 text-lg shadow-2xl transition-all resize-none placeholder:text-muted-foreground/50",
+      "standard": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "cards": {
+      "base": "rounded-xl border border-border bg-card text-card-foreground shadow-sm",
+      "hover_effect": "hover:border-primary/50 hover:shadow-md transition-all duration-300 group"
+    },
+    "surfaces": {
+      "glass": "bg-black/60 backdrop-blur-xl border border-white/10 shadow-2xl",
+      "panel": "bg-background border-r border-border"
+    }
+  },
+  "visual_enhancers": {
+    "textures": [
+      "Noise overlay (opacity 0.03) on backgrounds to kill digital flatness.",
+      "Subtle grid lines (opacity 0.05) in the background."
+    ],
+    "shadows": {
+      "glow": "0 0 20px -5px rgba(99, 102, 241, 0.3)",
+      "deep": "0 20px 40px -10px rgba(0, 0, 0, 0.5)"
+    },
+    "borders": {
+      "tracing_beam": "Animated gradient border for active states.",
+      "tech": "1px solid border-border/40. Remove border on last item of row."
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-out",
+    "animations": {
+      "fade_in": "opacity-0 animate-in fade-in duration-500",
+      "slide_up": "translate-y-4 opacity-0 animate-in slide-in-from-bottom-4 fade-in duration-500",
+      "text_stream": "Typewriter effect for code generation."
+    },
+    "libraries": ["framer-motion"]
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Consistent sizing."
+    },
+    "images": {
+      "abstract_bg": "https://images.unsplash.com/photo-1764452846368-2709775eb926?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBnZW9tZXRyaWMlMjB0ZWNobm9sb2d5JTIwdGV4dHVyZSUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzY0NzcwODE3fDA&ixlib=rb-4.1.0&q=85",
+      "coding_thumb": "https://images.unsplash.com/photo-1753998943413-8cba1b923c0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBzY3JlZW4lMjBjbG9zZSUyMHVwJTIwbW9uaXRvciUyMGRhcmslMjBtb2RlfGVufDB8fHx8MTc2NDc3MDgyMHww&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Use asymmetry.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (transition: all).",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles (pill or sharp).",
+    "NEVER use AI assistant Emoji characters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Use 'sonner' for toasts."
+  ],
+  "instructions_to_main_agent": "Follow the 'Swiss Brutalist' aesthetic. Use the provided colors and fonts. Implement the 'Control Room' grid for the main editor. Use the 'abstract_bg' for the landing page hero background with a heavy overlay. Use 'coding_thumb' for history items if no preview is available."
+}
